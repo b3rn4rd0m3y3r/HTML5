@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Ht014</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Segundo nível de DIVs para estilo responsivo. Uso de Id em DIVs.">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			BODY {
+				font-family: Arial;
+				}
+			DIV#main {
+				width: 50%;
+				}
+			DIV#main > DIV.linha {
+				display: table-row;
+				float: clear;
+				}
+			DIV#main > DIV.linha > DIV.coluna {
+				float: left;
+				padding: 20px;
+				}
+			H1, H2, H3 {
+				font-family: Verdana;
+				}
+			H1 {
+				color: dodgerblue;
+				border: solid 1px dodgerblue;
+				float: clear;
+				text-align: center;
+				
+				}
+			H2 {
+				color: steelblue;
+				text-align: center;
+				}
+			H3 {
+				color: midnightblue;
+				text-align: center;
+				}
+			P {
+				color: dimgray;
+				}
+			SPAN {
+				color: red;
+				font-style: italic;
+				}
+			SPAN.aviso {
+				font-weight: bold;
+				}
+		</style>
+	</head>
+	<body>
+		<!-- Área principal de apresentação -->
+		<div id="main">
+			<!-- Linha 1 de apresentação -->
+			<div class=linha>
+				<h1>Título 1</h1>
+			</div>
+			<!-- Linha 2 de apresentação -->
+			<div class=linha>
+				<div class=coluna>
+					<h2>Subtítulo 1.1</h2>
+					<p>Primeiro parágrafo do <span>subtítulo 1.1</span></p>
+					<p>Segundo parágrafo do <span>subtítulo 1.1</span></p>
+					<p>Terceiro parágrafo do <span>subtítulo 1.1</span></p>
+				</div>
+				<div class=coluna>
+					<h2>Subtítulo 1.2</h2>
+					<p>Primeiro parágrafo do <span>subtítulo 1.2</span></p>
+					<p>Segundo parágrafo do <span>subtítulo 1.2</span></p>
+					<p>Terceiro parágrafo do <span>subtítulo 1.2</span></p>
+				</div>
+			</div>
+			<!-- Linha 3 de apresentação -->
+			<div class=linha>
+				<h1>Título 2</h1>
+			</div>
+			<!-- Linha 4 de apresentação -->
+			<div class=linha>
+				<div class=coluna>
+					<h2>Subtítulo 2.1</h2>
+					<p>As matrículas poderão ser efetivadas a partir de <span class="aviso">09/11/2021</span> com encerramento em <span class="aviso">29/11/2021</span></p>
+				</div>
+				<div class=coluna>
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>Ht020</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Menus com UL/LI. Evento hover">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			IMG#i01 {z-index:1;position:absolute;}
+			
+			NAV#menu {height: 20px;z-index: 10;position: fixed; float: clear;}
+			NAV#menu UL LI {
+				cursor: pointer;
+				background-color: skyblue;
+				color: dimgray;
+				border: solid 1px dimgrey;
+				border-radius: 6px;
+				float: left;
+				font-family: Verdana;
+				list-style: none;
+				margin-left: 8px;
+				padding-left: 8px;
+				padding-right: 8px;
+				text-align: center;
+				}
+			NAV#menu UL LI UL {
+				/* display: block; */
+				position: absolute;
+				margin-left: -50px;
+				float: clear;
+				width: 120px;
+				}
+			NAV#menu UL LI UL LI {
+				float: clear;
+				display: none;
+				
+				}
+			NAV#menu UL LI:hover {
+				color: lightskyblue;
+				background-color: dimgray;
+				float: clear;
+				}
+			NAV#menu UL LI:hover UL LI {
+				display: table-column;
+				float: clear;
+				}			
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<nav id="menu">
+				<ul>
+					<li>Item 1
+						<ul>
+							<li>Item 11</li>
+							<li>Item 12</li>
+						</ul>
+					</li>
+					<li>Item 2</li>
+					<li>Item 3
+						<ul>
+							<li>Item 31</li>
+							<li>Item 32</li>
+							<li>Item 33</li>
+						</ul>
+					</li>
+					<li>Item 4</li>
+				</ul>
+			</nav>
+			<div id="secao">
+				<img width=1200 id="i01" src="Figura.jpg">
+			</div>
+		</div>
+	</body>
+</html>

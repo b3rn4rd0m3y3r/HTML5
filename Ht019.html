@@ -1,17 +1,19 @@
 <html>
 	<head>
-		<title>Ht018</title>
+		<title>Ht019</title>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<meta charset="iso-8859-1"/>
 		<meta name="author" content="Bernardo Meyer">
-		<meta name="description" content="Listas con UL/LI">
+		<meta name="description" content="Listas com UL/LI. Evento hover">
 		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
 		<style>
 			IMG#i01 {z-index:1;position:absolute;}
 			
-			NAV#menu {height: 20px;z-index: 10;position: fixed;float: clear;}
+			NAV#menu {height: 20px;z-index: 10;position: fixed; float: clear;}
 			NAV#menu UL LI {
 				cursor: pointer;
+				background-color: skyblue;
+				color: dimgray;
 				border: solid 1px dimgrey;
 				border-radius: 6px;
 				float: left;
@@ -21,6 +23,10 @@
 				padding-left: 8px;
 				padding-right: 8px;
 				text-align: center;
+				}
+			NAV#menu UL LI:hover {
+				color: lightskyblue;
+				background-color: dimgray;				
 				}
 		</style>
 	</head>

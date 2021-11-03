@@ -1,35 +1,37 @@
 <html>
 	<head>
-		<title>Ht021</title>
+		<title>Ht023</title>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<meta charset="iso-8859-1"/>
 		<meta name="author" content="Bernardo Meyer">
-		<meta name="description" content="Tabelas com UL/LI. Layout Flex">
+		<meta name="description" content="Tabelas com UL/LI.  Layout Flex">
 		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
 		<style>
 			IMG#i01 {z-index:1;position:absolute;}
 			/* Barras do gráfico */
 			LI#col01 {
-				height: 20px;
-
+				height: 35px;
+				background-color: green;
 				}
 			LI#col02 {
 				height: 140px;
-
+				background-color: gold;
 				}
 			LI#col03 {
 				height: 80px;
-
+				background-color: skyblue;
 				}
 			LI#col04 {
 				height: 55px;
+				background-color: salmon;
 				}
 			LI#col05 {
-				height: 130px;
-
+				height: 120px;
+				background-color: brown;
 				}
 			LI#col06 {
 				height: 70px;
+				background-color: purple;
 				}				
 			NAV#menu {height: 20px;z-index: 10;position: fixed; float: clear;}
 			NAV#graf UL {
@@ -42,8 +44,8 @@
 				}
 			NAV#graf UL LI {
 				cursor: pointer;
-				background-color: skyblue;
-				color: dimgray;
+				/* background-color: skyblue; */
+				color: black;
 				border: solid 1px dimgrey;
 				border-radius: 6px;
 				float: left;
@@ -54,7 +56,16 @@
 				padding-right: 8px;
 				text-align: center;
 				vertical-align: bottom;
-				width: 20px;
+				width: 30px;
+				}
+			NAV#graf UL LI B {
+				position: relative;
+				top: -20px;
+				}
+			NAV#graf UL#cores LI {
+				font-size: 10px;
+				border-width: 0px;
+				text-align: center;
 				}
 		</style>
 	</head>
@@ -62,12 +73,20 @@
 		<div id="main">
 			<nav id="graf">
 				<ul>
-					<li id="col01">&nbsp;</li>
-					<li id="col02">&nbsp;</li>
-					<li id="col03">&nbsp;</li>
-					<li id="col04">&nbsp;</li>
-					<li id="col05">&nbsp;</li>
-					<li id="col06">&nbsp;</li>
+					<li id="col01"><b>35</b></li>
+					<li id="col02"><b>140</b></li>
+					<li id="col03"><b>80</b></li>
+					<li id="col04"><b>55</b></li>
+					<li id="col05"><b>120</b></li>
+					<li id="col06"><b>70</b></li>
+				</ul>
+				<ul id="cores">
+					<li>green</li>
+					<li>gold</li>
+					<li>skyblue</li>
+					<li>salmon</li>
+					<li>brown</li>
+					<li>purple</li>
 				</ul>
 			</nav>
 			<div id="secao">

@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Ht026</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Apresentação de notícias com UL/LI">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			BODY {font-family: Helvetica;}
+			DIV#main {display: table; }
+			DIV.linha {
+				display: table-row;
+				float: clear;
+				}
+			DIV#main > DIV > UL {
+				margin-top: 20px;
+				}
+			DIV#main > DIV > UL > LI { 
+				float: left; 
+				display: table-cell;
+				list-style: none;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: justify;
+				width: 400px;
+				}
+			DIV#main > DIV > UL > LI  > IMG {
+				width:400px;
+				}
+			H2 {
+				color: dodgerblue;;
+				}
+			LI {
+				color: cornflowerblue;
+				}
+		</style>
+	</head>
+	<body>
+		<center>
+		<div id="main">
+			<div class="linha" id="linha1">
+				<ul>
+					<li>
+						<h2>Título da Notícia 1</h2><img src="img/Fig1.jpg">
+					</li>
+					<li><h2>Título da Notícia 2</h2><img src="img/Fig2.jpg"></li>
+					<li><h2>Título da Notícia 3</h2><img src="img/Fig3.jpg"></li>
+				</ul>
+			</div>
+			<div class="linha" id="linha2">
+				<ul>
+					<li>Resumo da Notícia 1 para verificação do layout de apresentação das notícias</li>
+					<li>Resumo da Notícia 2 para verificação do layout de apresentação das notícias</li>
+					<li>Resumo da Notícia 3 para verificação do layout de apresentação das notícias</li>
+				</ul>
+			</div>
+			<div class="linha" id="linha3">
+				<ul>
+					<li><img src="img/Fig4.jpg"><h2>Título da Notícia 4</h2></li>
+					<li><img src="img/Fig5.jpg"><h2>Título da Notícia 5</h2></li>
+					<li><img src="img/Fig6.jpg"><h2>Título da Notícia 6</h2></li>
+				</ul>
+			</div>
+			<div class="linha" id="linha4">
+				<ul>
+					<li>Resumo da Notícia 1 para verificação do layout de apresentação das notícias</li>
+					<li>Resumo da Notícia 2 para verificação do layout de apresentação das notícias</li>
+					<li>Resumo da Notícia 3 para verificação do layout de apresentação das notícias</li>
+				</ul>
+			</div>
+		</div>
+		</center>
+	</body>
+</html>

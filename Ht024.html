@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Ht024</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Apresentação de notícias com UL/LI">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			DIV.linha {
+				display: table-row;
+				float: clear;
+				}
+			DIV#main > DIV > UL > LI { 
+				float: left; 
+				display: table-cell;
+				list-style: none;
+				}
+			DIV#main > DIV > UL > LI  > IMG {width:400px;}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="linha" id="linha1">
+				<ul>
+					<li><img src="img/Fig1.jpg">Notícia 1</li>
+					<li><img src="img/Fig2.jpg">Notícia 2</li>
+					<li><img src="img/Fig3.jpg">Notícia 3</li>
+				</ul>
+			</div>
+			<div class="linha" id="linha2">
+				<ul>
+					<li><img src="img/Fig4.jpg">Notícia 4</li>
+					<li><img src="img/Fig5.jpg">Notícia 5</li>
+					<li><img src="img/Fig6.jpg">Notícia 6</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

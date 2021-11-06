@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Ht030</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Apresentação de notícias com UL/LI e links.">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			A {
+				color: white;
+				background-color: midnightblue;
+				border: solid 1px gray;
+				border-radius: 6px;
+				font-family: Verdana;
+				font-size: 12px;
+				margin-left: 4px;
+				padding: 4px;
+				text-decoration: none;
+				width: 80px;
+				}
+			BODY {font-family: Helvetica;}
+			DIV#cabecalho {
+				border: solid 1px royalblue;
+				border-radius: 8px;
+				}
+			DIV#main {
+				display: table; 
+				}
+			DIV.linha {
+				display: table-row;
+				}
+			DIV#main > DIV > UL {
+				margin-top: 20px;
+				}
+			DIV#main > DIV > UL > LI { 
+				float: left; 
+				display: table-cell;
+				list-style: none;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: justify;
+				width: 400px;
+				}
+			DIV#main > DIV > UL > LI  > IMG {
+				width:400px;
+				}
+			H1 {
+				border: solid 1px steelblue;
+				border-radius: 8px;
+				background-color: royalblue;
+				color: white;
+				margin: 2px;
+				}
+			H2 {
+				color: dodgerblue;;
+				}
+			LI {
+				color: cornflowerblue;
+				}
+		</style>
+	</head>
+	<body>
+		<center>
+		<div id="main">
+			<div id="cabecalho">
+				<h1>NOTÍCIAS RECENTES</h1>
+			</div>
+			<div class="linha" id="linha1">
+				<ul>
+					<li>
+						<h2>Título da Notícia 1</h2><img src="img/Fig1.jpg">
+					</li>
+					<li><h2>Título da Notícia 2</h2><img src="img/Fig2.jpg"></li>
+					<li><h2>Título da Notícia 3</h2><img src="img/Fig3.jpg"></li>
+				</ul>
+			</div>
+			<div class="linha" id="linha2">
+				<ul>
+					<li>Resumo da Notícia 1 para verificação do layout de apresentação das notícias <a href="Noticias/Not1.html">Mais</a></li>
+					<li>Resumo da Notícia 2 para verificação do layout de apresentação das notícias <a href="Noticias/Not2.html">Mais</a></li>
+					<li>Resumo da Notícia 3 para verificação do layout de apresentação das notícias <a href="Noticias/Not3.html">Mais</a></li>
+				</ul>
+			</div>
+			<div class="linha" id="linha3">
+				<ul>
+					<li><img src="img/Fig4.jpg"><h2>Título da Notícia 4</h2></li>
+					<li><img src="img/Fig5.jpg"><h2>Título da Notícia 5</h2></li>
+					<li><img src="img/Fig6.jpg"><h2>Título da Notícia 6</h2></li>
+				</ul>
+			</div>
+			<div class="linha" id="linha4">
+				<ul>
+					<li>Resumo da Notícia 1 para verificação do layout de apresentação das notícias<a href="Noticias/Not4.html">Mais</a></li>
+					<li>Resumo da Notícia 2 para verificação do layout de apresentação das notícias<a href="Noticias/Not5.html">Mais</a></li>
+					<li>Resumo da Notícia 3 para verificação do layout de apresentação das notícias<a href="Noticias/Not6.html">Mais</a></li>
+				</ul>
+			</div>
+		</div>
+		</center>
+	</body>
+</html>

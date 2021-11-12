@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Ht042</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Formulários I - Campos mais comuns. Rótulos formatados.">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			.inp {
+				position: relative;
+				grid-area: inp;
+				height: 20px;
+				width: 30%;
+				}
+			.lab {
+				position: relative;
+				float: left;
+				grid-area: lb;
+				height: 20px;
+				width: 30%;
+				}
+			DIV#frm {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: auto;
+				grid-template-areas: 
+				"lb inp"
+				"lb inp"
+				"lb inp"
+				"lb inp";
+				/* "inp inp"; */
+				grid-gap: 40px;
+				/* max-width: 400px; */
+				}
+
+		</style>
+	</head>
+	<body>
+		<center>
+			<div id="frm"><form method="" action="">
+				
+					<div class="lab">Número: </div><div class="inp"><input type="number" name="inpNumero" id="inpNumero"></div>
+					<div class="lab">Texto: </div><div class="inp"><input type="text" name="inpTexto" id="inpTexto"></div>
+					<div class="lab">Data: </div><div class="inp"><input type="date" name="inpData" id="inpData"></div>
+					<div class="lab">Senha: </div><div class="inp"><input type="password" name="inpSenha" id="inpSenha"></div>
+					<div class="lab">&nbsp;</div><div class="inp"><input type="submit" value="Envia"></div>
+				
+			</form></div>
+		</center>
+	</body>
+</html>

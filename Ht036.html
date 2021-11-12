@@ -1,0 +1,269 @@
+<html>
+	<head>
+		<title>Ht036</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<meta charset="iso-8859-1"/>
+		<meta name="author" content="Bernardo Meyer">
+		<meta name="description" content="Links internos. One page site (OPS). Com menu superior.">
+		<meta name="keywords" content="sites, web, desenvolvimento, HTML5">
+		<style>
+			/* Formatações do menu de navegação - Aula Ht019.html */
+			NAV#menu {
+				background-color: antiquewhite;
+				border-radius: 8px;
+				height: 35px;
+				margin-left: 10px;
+				margin-top: 10px;
+				opacity: 90%;
+				z-index: 10;
+				position: fixed; 
+				float: clear;
+				}
+			NAV#menu UL {	
+				margin-top: 8px;
+				margin-left: -40px;
+				padding-right: 10px;
+				}			
+			NAV#menu UL LI {
+				cursor: pointer;
+				background-color: rgba(0,212,255,1);
+				color: dimgray;
+				border: solid 1px dimgrey;
+				border-radius: 6px;
+				float: left;
+				font-family: Verdana;
+				list-style: none;
+				margin-left: 8px;
+				padding-left: 8px;
+				padding-right: 8px;
+				text-align: center;
+				}
+			NAV#menu UL LI A {
+				background-color:transparent;
+				border: solid 0px dimgrey;
+				border-radius: 0px;
+				color: white;
+				font-family: Verdana;
+				font-size: 16px;
+				}
+			NAV#menu UL LI:hover {
+				color: white;
+				background-color: dimgray;				
+				}
+			/* Final das Formatações do menu de navegação */
+			A {
+				color: white;
+				background-color: midnightblue;
+				border: solid 1px gray;
+				border-radius: 6px;
+				font-family: Verdana;
+				font-size: 12px;
+				margin-left: 4px;
+				padding: 4px;
+				text-decoration: none;
+				width: 80px;
+				}
+			A.nada {
+				background-color: transparent;
+				border-width: 0px;
+				float: clear;
+				}
+			BODY {font-family: Verdana;}
+			DIV#cabecalho {
+				border: solid 1px palegoldenrod;
+				border-radius: 8px;
+				overflow: hidden;
+				height: 320px;
+				background-blend-mode: screen;
+				background-image: url('Banner1.jpg');
+				background-color: #004000;
+				background-size: cover;
+				}
+			DIV#main {
+
+				width: 80%;
+				}
+			DIV.item {
+				justify-content: center;
+				}
+			DIV.secao {
+				display: flex;
+				flex-direction: row;
+				text-align: justify;
+				}
+			DIV.secao > DIV {
+				border: solid 1px lightgrey;
+				border-radius: 50%;
+
+				flex: 1;
+				flex-flow: row nowrap;
+				height: 320px;
+				/* justify-content: space-between; */
+				margin-left: 10px;
+				text-align: center;
+
+				}
+			DIV#linha1 {
+				/* background-image: url(Fundo1.jpg); */
+				
+				background-blend-mode: screen;
+				background-color: #90EE90;
+				background-size: cover;
+				padding: 10px;
+				}
+			/* Serviços */
+			DIV#consult {
+				background-image: url(img/Consultoria.jpg);
+				background-blend-mode: screen;
+				background-color: green;
+				background-size: cover;
+				}
+			DIV#logistica {
+				background-image: url(img/Logistica.jpg);
+				background-blend-mode: screen;
+				background-color: green;
+				background-size: cover;
+				}
+			DIV#vendas {
+				background-image: url(img/Vendas.jpg);
+				background-blend-mode: screen;
+				background-color: green;
+				background-size: cover;
+				}
+				
+			DIV#rodape {
+				border: solid 2px royalblue;
+
+				border-radius: 8px;
+				display: flex;
+				flex-direction: row;
+				margin-top: 10px;
+				padding: 2px;
+				}
+			DIV#rodape H1 {
+				float: left;
+				flex: 1;
+				flex-flow: row nowrap;
+				font-size: 20px;
+				}
+			DIV.texto {
+				font-size: 18px;
+				float: clear;
+				border: solid 2px lightskyblue;
+				border-radius: 20px;
+				padding: 2px;
+				}
+			H1 {
+				border: solid 1px steelblue;
+				border-radius: 8px;
+				background: rgb(2,0,36);
+				background: linear-gradient(90deg, rgba(2,32,36,1) 0%, rgba(9,49,121,1) 16%, rgba(0,212,255,1) 70%, rgba(9,49,121,1) 100%);
+				color: white;
+				margin: 2px;
+				padding: 6px;
+				}
+			H1.rodape {
+				background: linear-gradient(90deg, rgba(2,32,36,1) 0%, rgba(9,49,121,1) 40%,  rgba(9,49,121,1) 100%);
+				}
+			H2 {
+				border: solid 1px lightgrey;
+				border-radius: 16px;
+				color: #0040C0;
+				float: clear;
+				font-weight: bold;
+				margin-top:10px;
+				margin-left: 20px;
+				margin-right: 20px;
+				opacity: 70%;
+				text-align: center;
+				text-shadow: 1px 1px 2px gold;
+				}
+			H2.fosco {
+				background-color: antiquewhite;
+				margin-top: 50px;
+				width: 70%;
+				}
+			DIV.texto > DIV  {
+				float: clear;
+				flex-flow: row nowrap;
+				display: flex; 
+				margin: 0px;
+				padding: 0px;
+				}
+			DIV#linha1.texto DIV P { 
+				color: #90EE90;
+				width: 280px; flex: 1; float: left;padding: 10px; 
+				margin: 2px;
+				margin-left: 10px;
+				background-color: #088F8F;
+				border-radius: 20px;
+				}
+		</style>
+	</head>
+	<body>
+		<center>
+		<a class="nada" name="topo"></a>
+		<div id="main">
+			<nav id="menu">
+				<ul>
+					<li><a href="#quem">Quem Somos</a></li>
+					<li><a href="#serv">Serviços</a></li>
+					<li><a href="#cont">Contatos</a></li>
+				</ul>
+			</nav>
+			<div id="cabecalho">
+				<h1>MARKET BLOG MAGAZINE</h1>
+				<!-- img src="Banner1.jpg" -->
+			</div>
+
+			<a class="nada" name="quem"></a>
+			<h2>Quem Somos</h2>
+			<div class="texto" id="linha1" align=justify>
+				<div>
+					<p>Empresa fundada em 1992, com amplo portfólio de itens para venda em franquia.</p>
+					<p>Ampla equipe de vendas e de apoio para implantação das franquias.</p>
+					<p>Fazemos as suas compras e obtemos os melhores preços.</p>
+					<p>Captamos financiamentos e empréstimos para as lojas franqueadas em pacote.</p>
+				</div>
+				<div>
+					<p>Não fazemos retiradas no tempo de pagamento da franquia. Confiamos em nossas marcas, e fazemos as retiradas sobre o lucro líquido.</p>
+					<p>Monitoramos constantemente o seu negócio.</p>
+					<p>Selecionamos mão de obra qualificada, caso seja esta a sua opção.</p>
+					<p>Fazemos a sua contabilidade e organizamos o seu setor financeiro, caso você opte por esta modalidade.</p>
+				</div>
+				<div>
+					<p>Fazemos todo o seu serviço de RH, caso seja esta a sua opção.</p>
+					<p>Dispomos de serviço jurídico do qual você pode fazer uso parcial ou totalmente.</p>
+				</div>
+			</div>
+			<a class="nada" name="serv"></a>
+			<h2>Serviços</h2>
+			<div class="secao" id="linha2">
+				<div class="item" id="consult"><center><h2 class="fosco" align=center>CONSULTORIA</h2></center></div>
+				<div class="item" id="logistica"><center><h2 class="fosco" align=center>LOGÍSTICA</h2></center></div>
+				<div class="item" id="vendas"><center><h2 class="fosco" align=center>VENDAS</h2></center></div>
+			</div>
+			<div class="secao" id="linha3">
+
+			</div>
+			<div class="linha" id="linha4">
+
+			</div>
+			<a class="nada" name="cont"></a>
+			<div id="rodape">
+				<h1 class=rodape align=left>
+				Contatos:<br>
+				Whatsapp: 9 9999-2222<br>
+				Site: www.marketblogxxx.com.br
+				</h1>
+				<h1 class=rodape align=right>
+				Diretoria:<br>
+				Administrativa: 9 9988-2244<br>
+				Financeira: 9 9977-2255
+				</h1>
+				<!-- img src="Banner1.jpg" -->
+			</div>
+		</div>
+		</center>
+	</body>
+</html>

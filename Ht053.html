@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@keyframes deslocar {
+  from {
+    left: 30px ;
+  }
+  to {
+    left: 800px ;
+  }
+}
+
+DIV.bola {position: relative;left: auto;display:inline-block;	
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;}
+div:hover {
+	height: 200px;
+	width: 200px;
+	}
+.right {
+	cursor: pointer;
+	border: solid 1px gray; 
+	border-radius: 20%;
+	padding: 4px;
+	}
+.right:active ~ DIV#wrap DIV.bola{
+	animation: deslocar 20s ;
+	animation-fill-mode: forwards;
+	}
+</style>
+</head>
+<body>
+
+<h1>CSS3 - eventos - Controlando outros elementos</h1>
+<a class="right">Para direita</a>
+<p>Passe o mouse no círculo abaixo e clique:</p>
+<div id="wrap">
+	<div class="bola"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<head>
+	<style>
+		DIV#wrap {
+			position: absolute;
+			margin-top: 200px; 
+			margin-left: 200px;
+			width:400px;
+			height: 400px;
+			border: solid 1px gray; 
+			border-radius: 50%;
+			}
+		DIV#traco {
+			position: relative;
+			margin-top: 200px;
+			background-color: red;
+			height: 3px;
+			transform-origin: 200px center;
+			width: 200px;
+			animation-duration: 50s;
+			animation-name: giro;			
+			}
+		DIV#traco2 {
+			position: relative;
+			/* Topo fica em 0px agora, devido ao ponteiro anterior */
+			margin-top: 0px;
+			background-color: green;
+			height: 3px;
+			transform-origin: 200px center;
+			width: 200px;
+			animation-duration: 100s;
+			animation-name: giro;			
+			}
+		
+		
+		@keyframes giro {
+		  from {
+		    transform: rotate(0deg) ;
+		  }
+		  to {
+		    transform: rotate(3600deg) ;
+		  }
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="traco">&nbsp;</div>
+		<div id="traco2">&nbsp;</div>
+	</div>
+</body>

@@ -1,0 +1,41 @@
+<head>
+	<style>
+		DIV#wrap {
+			position: absolute;
+			margin-top: 200px; 
+			margin-left: 200px;
+			width:400px;
+			height: 400px;
+			border: solid 1px gray; 
+			border-radius: 50%;
+			}
+		DIV#traco {
+			position: relative;
+			margin-top: 200px;
+			background-color: red;
+			height: 3px;
+			transform-origin: 200px center;
+
+			width: 200px;
+			animation-duration: 300s;
+			animation-name: giro;			
+			}
+		
+		
+		@keyframes giro {
+		  from {
+		    transform: rotate(0deg) ;
+		  }
+		  to {
+		    transform: rotate(3600deg) ;
+		  }
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="traco">&nbsp;</div>
+	</div>
+</body>

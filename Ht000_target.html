@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="w3c.css">
+		<style> 
+
+			:root {
+				--fpad: Arial;
+				}
+			/* BorderColor */
+			.w3-border-amber{border:1px solid #ffc107!important}
+			.w3-border-aqua{border:1px solid #00ffff!important}
+			.w3-border-blue{border:1px solid #2196F3!important}
+			.w3-border-light-blue{border:1px solid #87CEEB!important}
+			.w3-border-brown{border:1px solid #795548!important}
+			.w3-border-cyan{border:1px solid #00bcd4!important}
+			.w3-border-blue-grey{border:1px solid #607d8b!important}
+			.w3-border-green{border:1px solid #4CAF50!important}
+			.w3-border-light-green{border:1px solid #8bc34a!important}
+			.w3-border-indigo{border:1px solid #3f51b5!important}
+			.w3-border-khaki{border:1px solid #f0e68c!important}
+			.w3-border-lime{border:1px solid #cddc39!important}
+			.w3-border-orange{border:1px solid #ff9800!important}
+			.w3-border-deep-orange{border:1px solid #ff5722!important}
+			.w3-border-pink{border:1px solid #e91e63!important}
+			.w3-border-purple{border:1px solid #9c27b0!important}
+			.w3-border-deep-purple{border:1px solid #673ab7!important}
+			.w3-border-red{border:1px solid #f44336!important}
+			.w3-border-sand{border:1px solid #fdf5e6!important}
+			.w3-border-teal{border:1px solid #009688!important}
+			.w3-border-yellow{border:1px solid #ffeb3b!important}
+			.w3-border-white{border:1px solid #ffffff!important}
+			.w3-border-black{border:1px solid #000000!important}
+			A.linq {
+				display: block;
+				float:clear;
+				font-family: var(--fpad);
+				padding: 2px;
+				text-decoration: none;
+				width: fit-content;
+				}
+			A.linqmin {
+				display: block;
+				float:clear;
+				font-family: var(--fpad);
+				font-size: 8px;
+				padding: 2px;
+				text-decoration: none;
+				width: fit-content;
+				}
+			DIV.box:target{
+				display: block;
+				color: red;
+				}
+			DIV.box {
+				display: none;
+				overflow: hidden;
+				float:clear;
+				}
+			DIV.cox {
+				display: none;
+				overflow: hidden;
+				float:clear;
+				}
+			UL {
+				list-style-type: none;
+				margin: 0px;
+				padding-bottom: 0px;
+				padding-top: 0px;
+				}
+			UL LI {
+				background-color: #fff107;
+				margin-left: -16px;
+				padding-left: 6px;
+				padding-right: 6px;
+				width: fit-content;
+				}
+		</style>
+	</head>
+	<body>
+
+		<h1 class="w3-container w3-red" style="padding: 2px;">
+		<p class="w3-amber w3-text-red" style="padding: 2px;margin: 0px;">CSS3 - eventos - Controlando outros elementos</p>
+		</h1>
+
+		<div class="w3-container">
+			<a class="linqmin w3-round w3-border-red" href="#main0">Fecha</a>
+			<div class="cox" id="main0"></div>
+			<a class="linq w3-round w3-border-blue" href="#main1">Opcao 1</a>
+			<div class="box box1" id="main1">	
+				<ul>				
+					<li>1.1</li>
+					<li>1.2</li>
+					<li>1.3</li>
+				</ul>
+			</div>
+			
+			<a class="linq w3-round w3-border-blue" href="#main2">Opcao 2</a>
+			<div class="box box2" id="main2">
+				<ul>
+					<li>2.1</li>
+					<li>2.2</li>
+					<li>2.3</li>
+				</ul>
+			</div>
+			
+			<a class="linq w3-round w3-border-blue" href="#main3">Opcao 3</a>
+			<div class="box box3" id="main3">
+				<ul>
+					<li>3.1</li>
+					<li>3.2</li>
+					<li>3.3</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

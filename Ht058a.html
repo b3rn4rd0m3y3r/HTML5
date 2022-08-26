@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ht058</title>
+		<title>Ht058a</title>
 		<link rel="stylesheet" href="w3c.css">
 		<style> 
-			a {
-				all: unset;
-				}
-			UL.w3-bar{display:none;}
-			/* UL.w3-panel LI.w3-bar UL:hover.w3-bar{display:block;} */
-			/* UL.w3-panel LI.w3-bar:hover ~ UL.w3-panel LI.w3-bar:hover UL.w3-bar LI{color: red;display:block flow;}
-			UL.w3-panel LI.w3-bar:hover {color: red;} */
-			UL.w3-bar:target {color:blue;display: block;}
+			UL.w3-panel LI.w3-bar UL.w3-bar{display:none;}
+			UL.w3-panel LI.w3-bar:hover > UL, UL.w3-panel LI.w3-bar UL.w3-bar:hover {color: red;display:block;}
 		</style>
 	</head>
 		<body>
@@ -19,8 +13,8 @@
 			<h1 class="w3-container w3-text-red">Estilos W3C</h1>
 			<h2 class="w3-container w3-text-blue">Menu Bar</h2>
 
-
-				<a href="#ul1">Cidades</a>
+			<ul class="w3-panel">
+				<li class="w3-bar">Cidades
 					<ul id="ul1" class="w3-bar">
 							<li class="w3-bar-item w3-hover-red">Londres</li>
 							<li class="w3-bar-item w3-hover-green">Paris</li>
@@ -28,8 +22,8 @@
 							<li class="w3-bar-item w3-hover-blue">São Paulo</li>
 							<li class="w3-bar-item w3-hover-blue-gray">Tokyo</li>
 					</ul>
-
-				<a href="#ul2">Opções</a>
+				</li>
+				<li class="w3-bar">Opções
 					<ul id="ul2" class="w3-bar">
 
 							<li class="w3-bar-item w3-hover-red">Op 1</li>
@@ -37,9 +31,9 @@
 							<li class="w3-bar-item w3-hover-cyan">Op 3</li>
 
 					</ul>
+				</li>
 
-
-
+			</ul>
 
 		</body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ht060</title>
+		<link rel="stylesheet" href="w3c.css">
+		<style> 
+			UL.w3-panel LI.w3-bar UL.w3-bar{display:none;}
+			/* Segundo nível */
+			UL.w3-panel LI.w3-bar:hover > UL, UL.w3-panel LI.w3-bar UL.w3-bar:hover {display:block;}
+			/* Terceiro nível */
+			UL.w3-panel LI.w3-bar:hover UL.w3-bar LI.w3-bar-item:hover > UL, UL.w3-panel LI.w3-bar UL.w3-bar:hover LI.w3-bar-item:hover UL.w3-bar:hover{display:block;list-style-type: none;}
+			w3-bar .w3-bar-item2 {padding:8px 16px;float:none;width:auto;border:none;display:block;outline:0}
+		</style>
+	</head>
+		<body>
+
+			<h1 class="w3-container w3-text-red">Estilos W3C</h1>
+			<h2 class="w3-container w3-text-blue">Menu Bar</h2>
+
+			<ul class="w3-panel">
+				<li class="w3-bar">Cidades
+					<ul id="ul1" class="w3-bar">
+						<li  class="w3-bar-item w3-hover-red">Brasil
+							<ul class="w3-bar">
+								<li class="w3-bar-item2 w3-hover-cyan">Rio de Janeiro</li>
+								<li class="w3-bar-item2 w3-hover-blue">São Paulo</li>
+								<li class="w3-bar-item2 w3-hover-blue-gray">Belo Horizonte</li>
+							</ul>
+						</li>
+						<li  class="w3-bar-item w3-hover-blue">Internacional
+							<ul class="w3-bar">
+								<li class="w3-bar-item2 w3-hover-red">Londres</li>
+								<li class="w3-bar-item2 w3-hover-green">Paris</li>
+								<li class="w3-bar-item2 w3-hover-blue-gray">Berlim</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="w3-bar">Opções
+					<ul id="ul2" class="w3-bar">
+						<li class="w3-bar-item2 w3-hover-red">Op 1</li>
+						<li class="w3-bar-item2 w3-hover-green">Op 2</li>
+						<li class="w3-bar-item2 w3-hover-cyan">Op 3</li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</body>
+</html>

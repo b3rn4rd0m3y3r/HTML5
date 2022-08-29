@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ht063</title>
+		<link rel="stylesheet" href="w3c.css">
+		<style> 
+			a {
+				all: unset;
+				}
+			A.linq {cursor:pointer;float: clear;display: block;font-weight:bold;padding: 2px;}
+			DIV.contdo{display:block;float: left;width: 300px;height: 200px;margin:0px;}
+
+			DIV.contdo:target {display: inline;float: left;}
+			DIV.fit {width: fit-content;}
+			DIV#projetor {
+				position: absolute;
+				overflow: hidden;
+				left: 200px;
+				width: 300px;
+				}
+			DIV#wrap {
+				height: 200px;
+				width: 960px;
+				padding: 0px;
+				overflow: hidden;
+				animation: slide 12s ease infinite;
+				}
+			@keyframes slide {
+				  20% {margin-left: 0px;}
+				  30% {margin-left: -300px;}
+				  40% {margin-left: -300px;}
+				  50% {margin-left: -600px;}
+				  70% {margin-left: -600px;}
+				  75% {margin-left: -900px;}
+				  99% {margin-left: -900px;}
+				}
+		</style>
+	</head>
+		<body>
+
+			<h1 class="w3-container w3-text-red">Estilos W3C</h1>
+			<h2 class="w3-container w3-text-blue">Accordion sem Javascript</h2>
+			<div id="projetor" class="w3-border">
+				<div id="wrap" class="w3-panel">
+					<div id="d1" class="contdo w3-orange">
+						<p>Anasprandum oroborium duplum et maniplus armatum scuderie planceta.</p>
+						<p>xxxxxxxx xxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxx xx xxxxxxxxx xx x xx xx </p>
+					</div>
+					<div id="d2" class="contdo w3-green">
+						<p>Toniolo busnello pazzeratto muscum nolietarium ziporium talentae bronzopinio luneratum.</p>
+						<p>yyyyyyyy yyyyy yyyyyyyyyy yyyyyyyyyyy yyyyyyyyy yyyyyyyyy yy yyyyyyyyy yy y yy yy </p>
+					</div>
+					<div id="d3" class="contdo w3-red">
+						<p>Isbraktofactum pelorium romanescum pilorium peludum lupus carium ortoberium.</p>
+						<p>zzzzzzzz zzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzz zz zzzzzzzzz zz z zz zz </p>
+					</div>
+				</div>
+			</div>
+
+
+		</body>
+</html>

@@ -16,24 +16,108 @@
 				position: absolute;
 				overflow: hidden;
 				left: 200px;
+				
 				width: 300px;
 				}
 			DIV#wrap {
 				height: 200px;
 				width: 960px;
 				padding: 0px;
+				margin: 0px;
 				overflow: hidden;
-				animation: slide 12s ease infinite;
+				animation: slide 15s ease infinite;
+				}
+			// Exibição trivial
+			@keyframes slide1 {
+					1% {margin-left: 0px;}
+					20% {margin-left: 0px;}
+					30% {margin-left: -300px;}
+					50% {margin-left: -300px;}
+					70% {margin-left: -600px;}
+					90% {margin-left: -600px;}
+				}
+			// Fade em paralelo à exibição
+			@keyframes slide3 {
+					1% {margin-left: 0px;opacity: 1;}
+					15% {margin-left: 0px;opacity: 0.2;}
+					25% {margin-left: -300px;opacity: 1;}
+					40% {margin-left: -300px;opacity: 0.2;}
+					55% {margin-left: -600px;opacity: 1;}
+					70% {margin-left: -600px;opacity: 0.2;}
+					85% {margin-left: -300px;opacity: 1;}
+					95% {margin-left: -300px;opacity: 0.2;}
+				}
+			// Transição fade
+			@keyframes slide3 {
+					1% {margin-left: 0px;}
+					15% {margin-left: 0px;}
+					16% {opacity: 1;}
+					20% {opacity: 0.2;}					
+					21% {margin-left: -300px;}
+					36% {margin-left: -300px;}
+					37% {opacity: 1;}
+					50% {opacity: 0.2;}		
+					51% {margin-left: -600px;}
+					66% {margin-left: -600px;}
+					67% {opacity: 1;}
+					80% {opacity: 0.2;}		
+					81% {margin-left: -300px;}
+					91% {margin-left: -300px;}
+					92% {opacity: 1;}
+					99% {opacity: 0.2;}
+				}
+			// Transição com abertura de cima para baixo
+			@keyframes slide4 {
+					1% {margin-left: 0px;height:200px;}
+					15% {margin-left: 0px;}
+					16% {height:200px;}
+					20% {height:0px;}					
+					21% {margin-left: -300px;height:0px;}
+					36% {margin-left: -300px;height:200px;}
+					37% {height:200px;}
+					50% {height:0px;}		
+					51% {margin-left: -600px;height:0px;}
+					66% {margin-left: -600px;height:200px;}
+					67% {height:200px;}
+					80% {height:0px;}		
+					81% {margin-left: -300px;height:0px;}
+					91% {margin-left: -300px;height:200px;}
+					92% {height:200px;}
+					99% {height:0px;}
 				}
 			@keyframes slide {
-				  20% {margin-left: 0px;}
-				  30% {margin-left: -300px;}
-				  40% {margin-left: -300px;}
-				  50% {margin-left: -600px;}
-				  70% {margin-left: -600px;}
-				  75% {margin-left: -900px;}
-				  99% {margin-left: -900px;}
+					1% {margin-left: 0px;height:200px;}
+					15% {margin-left: 0px;height:200px;}
+					16% {height:200px;}
+					20% {height:0px;}
+					24% {height:200px;}
+					25% {margin-left: -300px;height:200px;}
+					36% {margin-left: -300px;height:200px;}
+					37% {height:200px;}
+					43% {height:0px;}
+					50% {height:200px;}
+					51% {margin-left: -600px;height:200px;}
+					67% {margin-left: -600px;height:200px;}
+					68% {height:200px;}
+					74% {height:0px;}
+					80% {height:200px;}
+					81% {margin-left: -300px;height:200px;}
+					91% {margin-left: -300px;height:200px;}
+					92% {height:200px;}
+					99% {height:0px;}
 				}
+			// Transição com ida e volta
+			@keyframes slide2 {
+					1% {margin-left: 0px;}
+					15% {margin-left: 0px;}
+					25% {margin-left: -300px;}
+					40% {margin-left: -300px;}
+					55% {margin-left: -600px;}
+					70% {margin-left: -600px;}
+					85% {margin-left: -300px;}
+					95% {margin-left: -300px;}
+				}
+			/* IMG.im {background-image: url('trans.jpg');background-blend-mode: lighten;} */
 		</style>
 	</head>
 		<body>
@@ -43,16 +127,13 @@
 			<div id="projetor" class="w3-border">
 				<div id="wrap" class="w3-panel">
 					<div id="d1" class="contdo w3-orange">
-						<p>Anasprandum oroborium duplum et maniplus armatum scuderie planceta.</p>
-						<p>xxxxxxxx xxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxx xx xxxxxxxxx xx x xx xx </p>
+						<img class="im" src="Accord01.jpg">
 					</div>
 					<div id="d2" class="contdo w3-green">
-						<p>Toniolo busnello pazzeratto muscum nolietarium ziporium talentae bronzopinio luneratum.</p>
-						<p>yyyyyyyy yyyyy yyyyyyyyyy yyyyyyyyyyy yyyyyyyyy yyyyyyyyy yy yyyyyyyyy yy y yy yy </p>
+						<img class="im" src="Accord02.jpg">
 					</div>
 					<div id="d3" class="contdo w3-red">
-						<p>Isbraktofactum pelorium romanescum pilorium peludum lupus carium ortoberium.</p>
-						<p>zzzzzzzz zzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzz zz zzzzzzzzz zz z zz zz </p>
+						<img class="im" src="Accord03.jpg">
 					</div>
 				</div>
 			</div>

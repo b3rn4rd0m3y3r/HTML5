@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ht064</title>
+		<link rel="stylesheet" href="w3c.css">
+		<style> 
+
+		</style>
+	</head>
+	<body>
+		<div class="w3-panel">
+			<div class="w3-panel w3-light-grey w3-round-large w3-border w3-border-teal" style="padding: 2px;">
+				<div class="w3-container w3-teal w3-round-large">
+					<h2>Formulário de Entrada</h2>
+				</div>
+			</div>
+		</div>
+		<div class="w3-panel">
+			<form class="w3-container w3-card-4">
+				<br>
+				<p>      
+					<label class="w3-text-grey">Nome</label>
+					<input class="w3-input w3-border" type="text" required="">
+				</p>
+				<p>      
+					<label class="w3-text-grey">Email</label>
+					<input class="w3-input w3-border" type="text" required="">
+				</p>
+				<p>      
+					<label class="w3-text-grey">Assunto</label>
+					<textarea class="w3-input w3-border" style="resize:none"></textarea>
+				</p>
+				<br>
+				  <div class="w3-row">
+					  <div class="w3-half">
+						<input id="milk" class="w3-check" type="checkbox" checked="checked">
+						<label>Leite</label>
+						<br>
+						<input id="sugar" class="w3-check" type="checkbox">
+						<label>Açúcar</label>
+						<br>
+						<input id="lemon" class="w3-check" type="checkbox" disabled="">
+						<label>Limão (Disabled)</label>
+						<br><br>
+					  </div>
+
+					  <div class="w3-half">
+						<input id="male" class="w3-radio" type="radio" name="genero" value="masculino" checked="">
+						<label>Masculino</label>
+						<br>
+						<input id="female" class="w3-radio" type="radio" name="genero" value="feminino">
+						<label>Feminino</label>
+						<br>
+						<input id="unknown" class="w3-radio" type="radio" name="genero" value="" disabled="">
+						<label>N/A (Disabled)</label>
+					  </div>
+				</div>
+				<p class="w3-panel w3-light-grey w3-round-large w3-border w3-border-teal" style="padding: 2px;width: fit-content;">
+					<button type="button" class="w3-btn w3-padding w3-teal w3-round" style="width:120px">Enviar</button>
+				</p>
+			</form>
+		</div>
+	</body>
+</html>

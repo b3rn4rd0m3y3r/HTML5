@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<style>
+		.content {
+			position: relative;
+			height: 200px;
+			width: 200px;
+			margin: 60px auto;
+			overflow: hidden;
+			}
+
+		.layer {
+		  position: absolute;
+		}
+
+		.background {
+			transform: translateX(0);
+			animation: background-shift 4s linear 1 forwards;
+			}
+
+		.train {
+			transform: translateX(-440px);
+			animation: train-shift 4s linear 1 forwards;
+			}
+
+		.foreground {
+			transform: translateX(-210px);
+			animation: foreground-shift 4s linear 1 forwards;
+			}
+
+		@keyframes background-shift {
+			to {
+				transform: translateX(-80px);
+				}
+			}
+
+		@keyframes train-shift {
+			to {
+				transform: translateX(-140px);
+				}
+			}
+
+		@keyframes foreground-shift {
+			to {
+				transform: translateX(-400px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="layer background background-animation">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png"
+				/>
+			</div>
+			<div class="layer train train-animation">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png"
+				/>
+			</div>
+			<div class="layer foreground foreground-animation">
+				<img
+					src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc3.png"
+				/>
+			</div>
+		</div>
+	</body>
+</html>

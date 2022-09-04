@@ -6,40 +6,40 @@
 			height: 200px;
 			width: 200px;
 			margin: 60px auto;
-			overflow: hidden;
+			overflow: hidden; 
 			}
 
 		.layer {
 		  position: absolute;
 		}
-
+		/* FUNDO */
 		.background {
 			transform: translateX(0);
 			animation: background-shift 4s linear 1 forwards;
 			}
-
+		/* TREM */
 		.train {
 			transform: translateX(-440px);
 			animation: train-shift 4s linear 1 forwards;
 			}
-
+		/* FRENTE */
 		.foreground {
 			transform: translateX(-210px);
 			animation: foreground-shift 4s linear 1 forwards;
 			}
-
+		/* O fundo iniciou de 0 (zero) e vai avançar para 80 (Dif. 80) */
 		@keyframes background-shift {
 			to {
 				transform: translateX(-80px);
 				}
 			}
-
+		/* O trem iniciou de -440 e vai avançar para -140 (Dif. 300) */
 		@keyframes train-shift {
 			to {
 				transform: translateX(-140px);
 				}
 			}
-
+		/* O trilho iniciou de -210 e vai voltar para -400 (Dif. 190) */
 		@keyframes foreground-shift {
 			to {
 				transform: translateX(-400px);
@@ -48,19 +48,16 @@
 		</style>
 	</head>
 	<body>
+		<h1>Parallax</h1>
 		<div class="content">
 			<div class="layer background background-animation">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png"
-				/>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png"/>
 			</div>
 			<div class="layer train train-animation">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png"
-				/>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png"/>
 			</div>
 			<div class="layer foreground foreground-animation">
-				<img
-					src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc3.png"
-				/>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc3.png"/>
 			</div>
 		</div>
 	</body>

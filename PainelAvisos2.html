@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<!-- Cabeçalho -->
+	<head>
+
+		<title>PanAv2</title>
+		<meta name="author" content="JScript">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+		<meta name="description" content="Curso de Javascript">
+		<script type="text/javascript" src="jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+		var idx = 1;
+		var ctempo = 0;
+		const INTERVALO = 50;
+		var videoCode = ["8QZE0lq6Ja8", "nXUsDOSVTLQ", "kq-k9WkvDUQ","c9uQMZQbefs","uVV_mITYofE","SRpT0ltekMM","rRRcGGAupg4","gtN56eITHJ0","2tCypjYxz_c","k0U5l6bZmx4","l2Od01Fo3jQ","RuHsOeuTUnY","Nnni9Cxcmjk","IrgZFcDUj0Q","Vosne5WpVfA","XS-oV4IZCEU","S--MJWqPqxA","19Gtu9rMGrU","zogacoBOeZA","vAAFCDcrRrc","nwjiXk5eJR8","gQhaaAo1-8g","-4Lzr0TCXMA","YNwMZCaRHhM","qi1MMK1rfc0","ezHL9lmvNmI","qzkPGU8aik4","-yfr6R_YoBk","Tv6_lEaV5Qw","Zrh3r7ghZb0"];
+		function mudaVideo(){
+			const obj = $("#frm1");
+			document.title = "f"+idx;
+			//srcAtt = "https://www.youtube.com/embed/"+videoCode[idx]+"?autoplay=1&mute=1";
+			srcAtt = "https://www.youtube.com/embed/"+videoCode[idx]+"?autoplay=1";
+			idx++;
+			if( idx >= 29 ){ idx = 1 }
+			$("#idx").val(idx);
+			obj.attr("src", srcAtt);
+			obj[0].muted = false;
+			}
+		function init(){
+			var src = "";
+			//atualiza(0);
+			setInterval(mudaVideo, INTERVALO*1000);
+			}
+		function atualiza(timestamp){
+			ctempo++;
+			roda();
+			}
+		function roda(){
+			if( ctempo % INTERVALO == 0 ){
+				idx++;
+				mudaVideo();
+				}
+			window.requestAnimationFrame(atualiza);
+			}		
+
+		</script>
+		<style>
+			BODY {
+				background-color: #9099AE;
+				}
+		</style>
+	</head>
+
+	<!-- Corpo do Documento -->
+	<body onload="init();">
+		
+		<div class="principal">
+			<!-- Conteúdo Principal-->
+			Número do vídeo: <input type="text" id="idx">
+			<section class="video">
+				<!-- ******************** 00 ******************** -->
+				<div style="float:left;">
+					<iframe id="frm1" width="390" height="300" src="https://www.youtube.com/embed/8QZE0lq6Ja8?autoplay=1&mute=1">
+					</iframe>
+				</div>
+			</section>
+		</div>
+	</body>
+
+</html>
